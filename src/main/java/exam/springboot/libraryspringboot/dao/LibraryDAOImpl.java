@@ -23,4 +23,10 @@ public class LibraryDAOImpl implements LibraryDAO {
 
         return libraryRepository.findAll(paging).getContent();
     }
+
+    @Override
+    public int countLibrary() {
+
+        return libraryRepository.countLibrariesBy();
+    }
 }

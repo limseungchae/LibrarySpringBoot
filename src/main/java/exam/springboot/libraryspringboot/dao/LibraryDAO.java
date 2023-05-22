@@ -8,4 +8,5 @@ public interface LibraryDAO {
 
     List<Library> selectLibrary(int cpg);
 
+    int countLibrary();
 }
