@@ -17,7 +17,7 @@ LibraryService lbsrv;
 
 
     @GetMapping("/")
-    public String list(Integer cpg) {
+    public ModelAndView list(Integer cpg) {
         ModelAndView mv = new ModelAndView();
 
         if (cpg == null || cpg == 0) cpg = 1;
@@ -31,7 +31,7 @@ LibraryService lbsrv;
 
         mv.setViewName("list");
 
-        return "list";
+        return mv;
     }
 
 }
