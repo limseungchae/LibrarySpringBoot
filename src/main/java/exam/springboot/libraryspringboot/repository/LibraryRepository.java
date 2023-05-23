@@ -10,6 +10,6 @@ public interface LibraryRepository extends PagingAndSortingRepository<Library, L
 
     Page findAll(Pageable paging);
 
-    @Query("select ceil(count(lbno)/25) from Library")
-    int countLibrariesBy();
+    /*@Query("select ceil(count(lbno)/25) from Library")
+    int countLibrariesBy();*/
 }
